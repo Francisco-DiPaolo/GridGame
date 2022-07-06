@@ -5,10 +5,11 @@ using UnityEngine;
 public class GridManager : MonoBehaviour
 {
     public Block[] arrayBlocks;
+    public int MaxVertical, MaxHorizontal;
 
-    void Start()
+    void Awake()
     {
-        
+        arrayBlocks = FindObjectsOfType<Block>();
     }
 
     void Update()
